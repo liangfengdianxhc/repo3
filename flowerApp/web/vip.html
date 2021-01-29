@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/vip.css"/>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<div class="container">
+			<header id="header-back" style="background-color: #3d3e43;"><i class="iconfont" id="back"><img src="img/返回.png"></i>会员中心</header>
+			<div class="center">
+				<div class="main-top">
+					<div class="card">
+						<div class="card-top">
+							<label class="iconfont icon-yonghu" style="font-size: 60px; color: white;"></label>
+							<div class="member">
+								<p>用户2019072623929</p>
+								<figure>
+									<label class="iconfont icon-huangguan"></label>
+									<figcaption>&nbsp;普通会员</figcaption>
+								</figure>
+							</div>
+						</div>
+						<div class="card-bottom">
+							<div class="left">
+								<p>账户余额</p>
+								<b>￥0.00</b>
+							</div>
+							<button type="button">开通会员</button>
+						</div>
+					</div>
+				</div>
+				<div class="main-bottom">
+					会员权益：优惠八折
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	window.onload = function(){
+		var back = document.getElementById("back");
+		back.onclick = function(){
+			window.location.href="javascript:history.go(-1)";
+		}
+	}
+</script>

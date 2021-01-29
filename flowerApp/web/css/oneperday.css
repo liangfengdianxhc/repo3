@@ -1,0 +1,42 @@
+.content{
+	display: flex;
+	flex-direction: column;
+	background: #ffffff;
+}
+.content figure{
+	width: 100%;
+}
+.content figure img{
+	width: 100%;
+	display: block;
+}
+.content figure figcaption:nth-child(2){
+	padding: .10rem 1.50rem;
+	box-sizing: border-box;
+	font-size: .32rem;
+	color: #708090;
+	text-align: center;
+}
+.content figure figcaption:nth-child(3){
+	padding: .10rem 1.50rem;
+	box-sizing: border-box;
+	font-size: .28rem;
+	color: #708090;
+	text-align: center;
+}
+/* 点赞 */
+.content span{
+	width: 100%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+.content span img{
+	width: 1.00rem;
+	height: 1.00rem;
+	margin-top: .20rem;
+}
+.content span figcaption{
+	font-size: .32rem;
+	color: palevioletred;
+}

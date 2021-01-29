@@ -1,0 +1,170 @@
+.banner{
+	height: 2.7rem;
+	width: 100%;
+}
+.swiper-slide img{
+	width: 100%;
+	height: 2.7rem;
+}
+.menu{
+	width: 100%;
+	height: 3.15rem;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: white;
+}
+.menu figure figcaption {
+	font-size: 0.31rem;
+}
+.menu a{
+	width: 25%;
+	height: 1.575rem;
+	
+}
+.menu a figure{
+	width: 100%;
+	height: 1.575rem;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+.menu a figure img{
+	width: 0.82rem;
+	height: 0.82rem;
+	border-radius: 50% 50%;
+}
+.advertisement{
+	width: 100%;
+	height: 2.92rem;
+	background-color: white;
+}
+.advertisement img{
+	width: 100%;
+	height: 2.92rem;
+}
+.limitedcheap{
+	width: 100%;
+	height: 4.2rem;
+	padding: 0 0.25rem;
+	box-sizing: border-box;
+	margin-bottom: 0.1rem;
+	background-color: white;
+}
+.countdown{
+	
+	height: 1rem;
+	width: 100%;
+
+	display: flex;
+	
+	align-items: center;
+}
+.countdown p{
+	font-size: 0.34rem;
+	
+}
+.time{
+	font-size: 0.25rem;
+	color:#fa3954;
+	margin-left: 0.2rem;
+	
+}
+.time i{
+	width: 0.35rem;
+	height: 0.35rem;
+	display: inline-block;
+	background-color: #fa3954;
+	font-style: normal;
+	color: white;
+	border-radius: 0.05rem;
+	text-align: center;
+	line-height: 0.35rem;
+	margin-left: 0.03rem;
+	margin-right: 0.03rem;
+}
+.countdown-shopes{
+	display: flex;
+	justify-content: space-around;
+}
+.countdown-shopes figure{
+	width: 2.15rem;
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.countdown-shopes figure img{
+	width: 2.15rem;
+	height: 2.15rem;
+	border-radius: 0.15rem;
+}
+
+.countdown-shopes figure figcaption{
+	font-size: 0.27rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	
+}
+.countdown-shopes figure figcaption p{
+	color: #f97487;
+	align-items: center;
+	display: inline-block;
+}
+.container{
+	background-color: #f1f1f1;
+}
+.youlikelist{
+	background-color: white;
+	padding: 0 0.25rem;
+	box-sizing: border-box;
+}
+.youlikelist-top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 0.7rem;
+}
+#s1{
+	font-size: 0.35rem;
+
+	
+}
+#s2{
+	font-size: 0.25rem;
+	display: flex;
+	align-items: center;
+
+}
+#s2 i img{
+	width: 0.25rem;
+	height: 0.25rem;
+}
+.youlikelist-list a figure{
+	width: 3.4rem;
+	height: 4.75rem;
+	margin-bottom: 0.25rem;
+}
+.youlikelist-list a figure img{
+	width: 3.4rem;
+	height: 3.4rem;
+}
+.youlikelist-list a figure figcaption{
+	font-size: 0.3rem;
+		width: 3.4rem;
+}
+.youlikelist-list a figure figcaption p{
+		color: #f97487;
+}
+.youlikelist-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}

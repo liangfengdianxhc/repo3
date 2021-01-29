@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>分类</title>
+		<link rel="stylesheet" type="text/css" href="iconfonts/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/classify.css"/>
+	</head>
+	<body>
+		<body>
+			<div id="container">
+				<div id="header-back">
+					<i id="back">
+						<img src="img/img/1details2/return.png" >
+					</i>
+					拾间花坊
+				</div>
+				<div class="contains">
+					<div class="left">
+						<li class="active">鲜花礼盒</li>
+						<li>玫瑰花束</li>
+						<li>鲜花花束</li>
+						<li>婚车装饰</li>
+						<li>瓶装鲜花</li>
+						<li>散装鲜花</li>
+						<li>开业花篮</li>
+						<li>手提花篮</li>
+					</div>
+					<div class="right">
+						<div class="box">
+							<div class="list">
+								<figure>
+									<a href="">
+										<img src="img/img/1details2/1_10.png" >
+										<span>
+											<figcaption>留住好时光--粉绣球1枝，粉雪山玫瑰6枝</figcaption>
+											<figcaption class="red">￥239</figcaption>
+										</span>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<img src="img/img/1details2/1_10.png" >
+										<span>
+											<figcaption>留住好时光--粉绣球1枝，粉雪山玫瑰6枝</figcaption>
+											<figcaption class="red">￥239</figcaption>
+										</span>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<img src="img/img/1details2/1_10.png" >
+										<span>
+											<figcaption>留住好时光--粉绣球1枝，粉雪山玫瑰6枝</figcaption>
+											<figcaption class="red">￥239</figcaption>
+										</span>
+									</a>
+								</figure>
+							</div>
+						</div>
+						<div class="box">
+							<div class="list">
+								<figure>
+									<a href="">
+										<img src="img/img/1details2/1_10.png" >
+										<span>
+											<figcaption>留住好时光--粉绣球1枝，粉雪山玫瑰6枝</figcaption>
+											<figcaption class="red">￥239</figcaption>
+										</span>
+									</a>
+								</figure>
+								<figure>
+									<a href="">
+										<img src="img/img/1details2/1_10.png" >
+										<span>
+											<figcaption>留住好时光--粉绣球1枝，粉雪山玫瑰6枝</figcaption>
+											<figcaption class="red">￥239</figcaption>
+										</span>
+									</a>
+								</figure>
+							</div>
+						</div>
+						<div class="box">
+							<div class="list">
+								<figure>
+									<a href="">
+										<img src="img/img/1details2/1_10.png" >
+										<span>
+											<figcaption>留住好时光--粉绣球1枝，粉雪山玫瑰6枝</figcaption>
+											<figcaption class="red">￥239</figcaption>
+										</span>
+									</a>
+								</figure>
+							</div>
+						</div>
+						<div class="box">
+							<div class="list">
+								婚车装饰
+							</div>
+						</div>
+						<div class="box">
+							<div class="list">
+								瓶装鲜花
+							</div>
+						</div>
+						<div class="box">
+							<div class="list">
+								散装鲜花
+							</div>
+						</div>
+						<div class="box">
+							<div class="list">
+								开业花篮
+							</div>
+						</div>
+						<div class="box">
+							<div class="list">
+								手提花篮
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<footer id="footer">
+					<figure>
+						<a href="index.html">
+							<label class="iconfont icon-yemian-copy-copy"></label>
+							<figcaption>首页</figcaption>
+						</a>
+					</figure>
+					<figure>
+						<a href="">
+							<label class="iconfont icon-liebiao"></label>
+							<figcaption>分类</figcaption>
+						</a>
+					</figure>
+					<figure>
+						<a href="flowerclub.html">
+							<label class="iconfont icon-xingzi"></label>
+							<figcaption>花社</figcaption>
+						</a>
+					</figure>
+					<figure>
+						<a href="">
+							<label class="iconfont icon-gouwuchekong"></label>
+							<figcaption>购物车</figcaption>
+						</a>
+					</figure>
+					<figure>
+						<a href="">
+							<label class="iconfont icon-wode"></label>
+							<figcaption>我的</figcaption>
+						</a>
+					</figure>
+				</footer>
+			</div>	
+	</body>
+</html>
+<script src="js/px2rem.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	window.onload= function(){
+		var lis = document.getElementsByClassName("left")[0].children;
+		var divs = document.querySelectorAll(".box");
+		divs[0].style.display="block";
+		for (var i = 0; i < lis.length; i++) {
+			lis[i].index = i ;
+			lis[i].onclick = function(){
+				for (var j = 0; j < lis.length; j++) {
+					divs[j].style.display = "none";
+					lis[j].className="";
+				}
+				this.className = "active";
+				divs[this.index].style.display = "block";
+			}
+		}
+	}
+</script>
+<script type="text/javascript">
+	var back = document.getElementById("back");
+	back.onclick = function(){
+		window.location.href = "javascript:history.go(-1)";
+	}
+</script>

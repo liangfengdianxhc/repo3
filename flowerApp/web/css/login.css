@@ -1,0 +1,45 @@
+#login{
+	width: 100%;
+	height: calc(100vh - .88rem);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding:0 0.8rem;
+	box-sizing: border-box;
+}
+#login ul li label img{
+	height: .64rem;
+	width: .64rem;
+}
+#login ul{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+#login ul li{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: .1rem 0;
+	border-bottom: 1px solid gainsboro;
+}
+#login ul li:nth-child(3){
+	border: none;
+	font-size: .24rem;
+}
+#login ul li input{
+	flex: 1;
+	background: none;
+	
+}
+#loginbtn{
+	width: 100%;
+	height: .6rem;
+	box-sizing: border-box;
+	margin-top: 1.5rem;
+	background: #f97487;
+	color: white;
+	border-radius: 0.3rem;
+}

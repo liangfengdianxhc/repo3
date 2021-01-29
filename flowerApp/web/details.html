@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>详情页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/details.css" />
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/details.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				var back = document.getElementById("back");
+				back.onclick = function(){
+					window.location.href="javascript:history.go(-1)";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<header id="header-back"><i class="iconfont" id="back"><img src="img/返回.png"></i>拾间花坊</header>
+			<div class="main">
+				<!-- 商品详情图片 -->
+					<div class="detail_img">
+						<img src="img/1_02.png" >
+					</div>
+					<!-- 商品描述 -->
+					<div class="describe">
+						<span>
+							<p>留住好时光</p>
+							<p id="price" style="color: red;">￥239</p>
+						</span>
+						<span>粉绣球1支，粉雪山玫瑰6支</span>
+					</div>
+					<!-- 保障 -->
+					<div class="ensure">
+						<span>保障</span>
+						<span>
+							<figure>
+								<img src="img/1.png" >
+								<figcaption>材料保真险</figcaption>
+							</figure>
+							<figure>
+								<img src="img/1.png" >
+								<figcaption>材料保真险</figcaption>
+							</figure>
+							<figure>
+								<img src="img/1.png" >
+								<figcaption>材料保真险</figcaption>
+							</figure>
+							<figure>
+								<img src="img/1.png" >
+								<figcaption>材料保真险</figcaption>
+							</figure>
+						</span>
+					</div>
+					<!-- 商品详情 -->
+					<div class="details">
+						<p>商品详情</p>
+						<img src="img/2.png" >
+					</div>
+					<!-- 同类推荐 -->
+					<div class="youlike">
+						<div class="youlike_up">
+							<p>同类推荐</p>
+						</div>
+						<div class="youlike_down">
+							<figure>
+								<a href="">
+									<img src="img/1_12.png" >
+									<figcaption>留住好时光--粉绣球一支，粉雪山玫瑰6支</figcaption>
+									<figcaption>￥239</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="">
+									<img src="img/1_12.png" >
+									<figcaption>留住好时光--粉绣球一支，粉雪山玫瑰6支</figcaption>
+									<figcaption>￥239</figcaption>
+								</a>
+							</figure>
+						</div>
+					</div>
+			</div>
+			<footer id="detiles-footer">
+				<a id="buycar">
+					<figure>
+						<img src="img/购物车.png">
+						<figcaption>购物车</figcaption>
+					</figure>	
+
+				</a>
+				<a id="join-buycar">加入购物车</a>
+				<a id="buy">立即购买</a>
+			</footer>
+			
+		</div>
+		<div class="mask">
+			<div class="buy-count">
+				<figure>
+					
+					<img src="img/fc.png"  id="buyIm">
+					<figcaption>
+						<p id="priceIm">￥239</p>
+						<div id="">
+							<h4>留住好时光</h4>
+							<p>粉绣球1只，粉雪山玫瑰6支</p>
+						</div>
+						
+						
+					</figcaption>
+					<span class="iconfont icon-quxiao"></span>
+				</figure>
+				<div class="buy-count-content">
+					<p>购买数量</p>
+					<div class="">
+						<span id="reduce">-</span>
+						<span id="countValue">1</span>
+						<span id="add">+</span>
+					</div>
+					
+				</div>
+				<div class="input-cl">
+					<input type="button" value="确定" id="sure-btn"/>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>

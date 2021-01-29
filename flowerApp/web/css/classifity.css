@@ -1,0 +1,50 @@
+.main{
+	display: flex;
+	
+}
+.main-left{
+	width: 2rem;
+	height: 100%;
+	overflow-y: auto;
+}
+.main-left li{
+	font-size: 0.3rem;
+	width: 2rem;
+	height: 1.05rem;
+	background-color: #f6f6f6;
+	text-align: center;
+	line-height: 1.05rem;
+	color: #a5a5a5;
+	
+}
+.active{
+	border-left: 0.1rem solid #f97487;
+	box-sizing: border-box;
+	background-color: white !important;
+}
+.main-right{
+	overflow-y: auto;
+	flex:1;
+}
+.box{
+	display: none;
+}
+.box a figure{
+	display: flex;
+	margin: 0.15rem;
+}
+.box a figure img{
+	width: 1.77rem;
+	height: 1.77rem;
+}
+.box a figure figcaption{
+	flex: 1;
+	margin-left: 0.15rem;
+	font-size: 0.26rem;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+}
+.box a figure figcaption span{
+	color: #f97487;
+}

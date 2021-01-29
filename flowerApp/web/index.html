@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>首页</title>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script>
+			(function (){
+				var youlikeList = "";
+				$.ajax({
+					url:"likeServlet",
+					type:"POST",
+					success:function (data) {
+						youlikeList = data;
+						var htmls = ""
+						for (var i = 0; i < youlikeList.length; i++) {
+							htmls += '<a href="details.html?id='+youlikeList[i].id+'">';
+							htmls += '<figure>';
+							htmls += '<img src="img/'+youlikeList[i].imgUrl+'">';
+							htmls += '<figcaption>';
+							htmls += youlikeList[i].name;
+							htmls += '<p>';
+							htmls += '&yen'+ youlikeList[i].price;
+							htmls += '</p>';
+							htmls += '</figcaption>';
+							htmls += '</figure>';
+							htmls += '</a>';
+						}
+						$(".youlikelist-list").html(htmls)
+					},
+					dataType:"json"
+				})
+
+
+
+			})()
+
+
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<header id="header">拾间花坊</header>
+			<div class="main">
+				<div class="banner">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="img/banner1.png"></div>
+							<div class="swiper-slide"><img src="img/banner2.png"></div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div class="menu">	
+					<a>
+						<figure>
+							<img src="img/meua1.jpg" class="icon-shouye" />
+							<figcaption>首页</figcaption>
+						</figure>
+					</a>
+					<a>
+						<figure>
+							<img src="img/meua1.jpg" class="icon-shouye" />
+							<figcaption>分类</figcaption>
+						</figure>
+					</a>
+					<a>
+						<figure>
+							<img src="img/meua1.jpg" class="icon-shouye" />
+							<figcaption>花社</figcaption>
+						</figure>
+					</a>
+					<a>
+						<figure>
+							<img src="img/meua1.jpg" class="icon-shouye" />
+							<figcaption>购物车</figcaption>
+						</figure>
+					</a>
+					<a>
+						<figure>
+							<img src="img/meua1.jpg" class="icon-shouye" />
+							<figcaption>首页</figcaption>
+						</figure>
+					</a>
+					<a>
+						<figure>
+							<img src="img/meua1.jpg" class="icon-shouye" />
+							<figcaption>首页</figcaption>
+						</figure>
+					</a>
+					<a>
+						<figure>
+							<img src="img/meua1.jpg" class="icon-shouye" />
+							<figcaption>首页</figcaption>
+						</figure>
+					</a>
+					<a>
+						<figure>
+							<img src="img/meua1.jpg" class="icon-shouye" />
+							<figcaption>首页</figcaption>
+						</figure>
+					</a>
+				</div>
+				<div class="advertisement">
+					<img src="img/miaosha.png" />
+				</div>
+				<div class="limitedcheap">
+					<div class="countdown">
+						<p>限时打折</p>
+						<div class="time">
+							<i>19</i>:<i>21</i>:<i>15</i>
+						</div>
+					</div>
+					<div class="countdown-shopes">
+						<a>
+							<figure>
+								<img src="img/shoplist.png"/>
+								<figcaption>
+									留住好时光
+									<p>￥239</p>
+								</figcaption>
+							</figure>
+						</a>
+						<a>
+							<figure>
+								<img src="img/shoplist.png"/>
+								<figcaption>
+									留住好时光
+									<p>￥239</p>
+								</figcaption>
+							</figure>
+						</a>
+						<a>
+							<figure>
+								<img src="img/shoplist.png"/>
+								<figcaption>
+									留住好时光
+									<p>￥239</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+				<div class="youlikelist">
+					<div class="youlikelist-top">
+						<span id="s1">
+							猜你喜欢
+						</span>
+						<span id="s2">更多<i class="iconfont"><img src="img/jiufuqianbaoicon07.png" ></i></span>
+					</div>
+					<div class="youlikelist-list">
+						
+					</div>
+				</div>
+				
+			</div>
+			<footer id="footer">
+				<a >
+					<figure>	
+						<img src="img/index.png" class="icon-shouye" />
+						<figcaption>首页</figcaption>
+					</figure>
+				</a>
+
+				<a href="classifity.html">
+					<figure>
+						<img src="img/classification.png" class="icon-fenlei" />
+						<figcaption>分类</figcaption>
+					</figure>
+				</a>
+				<a href="flowerclub.html">
+					<figure>
+						<img src="img/news.png" class="icon-xiaoxi" />
+						<figcaption>花社</figcaption>
+					</figure>
+				</a>
+				<a  href="shoppingcart.html">
+					<figure>
+						<img src="img/buycar.png" class="icon-gouwuche" />
+						<figcaption>购物车</figcaption>
+					</figure>
+				</a>
+				<a href="my.html">
+					<figure>
+						<img src="img/personal.png" class="icon-weibiaoti2fuzhi12" />
+						<figcaption>我的</figcaption>
+					</figure>
+				</a>
+			</footer>
+		</div>
+	</body>
+</html>
+<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var swiper = new Swiper('.swiper-container', {
+		autoplay: true,
+		loop: true,
+		pagination: {
+			el: '.swiper-pagination',
+		},
+	});
+</script>

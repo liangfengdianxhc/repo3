@@ -1,0 +1,62 @@
+.big-pic{
+	width: 100%;
+	height: 4.4rem;
+	background: url(../img/fc.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-position-y: -1.5rem;
+}
+.big-pic-text {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+.big-pic-text p{
+	margin-top: 0.35rem;
+	font-size: 0.35rem;
+	padding: 0 1.1rem;
+	box-sizing: border-box;
+	text-align: center;
+	
+}
+.big-pic-text span{
+	font-size: 0.25rem;
+	padding: 0 1.1rem;
+	box-sizing: border-box;
+	text-align: center;
+	color: #808080;
+}
+.main-bottom{
+	padding: 0 0.35rem;
+	box-sizing: border-box;
+}
+.main-bottom figure{
+	margin: 0.25rem 0;
+}
+.main-bottom figure img{
+	width: 6.83rem;
+	height: 5.35rem;
+}
+.main-bottom figure figcaption{
+	font-size: 0.28rem;
+	display: flex;
+	text-align: center;
+	padding: 0 1.1rem;
+	color: #808080;
+}
+.countgood{
+	height: 3.8rem;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+.countgood img{
+	width: 1.15rem;
+	height: 1.15rem;
+}
+.countgood span{
+	font-size: 0.28rem;
+	color: #fa3954;
+}

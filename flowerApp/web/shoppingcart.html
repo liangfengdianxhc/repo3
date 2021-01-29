@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>购物车</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shoppingcart.css"/>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/shoppingcart.js" type="text/javascript" charset="utf-8"></script>
+	
+	</head>
+	<body>
+		<div class="container">
+				<header id="header-back"><i class="iconfont" id="back"><img src="img/返回.png"></i>拾间花坊</header>
+				<div class="main2">
+						<div class="noshop-top" style="display: none;">
+							<img src="img/backcar.png" >
+							<p>您的购物车空空如也</p>
+							<p>去挑几件中意的商品吧</p>
+							<a href="index.html">去逛一逛吧</a>
+						</div>
+						<div class="haveshop">
+							<div class="shopdiv">
+								
+								<span class="iconfont icon-weixuanzhong-01" id="shopdiv-xuanzhong"></span>
+								<figure>
+									<img src="img/shop1.png" >
+									<figcaption>
+										<p>风一样的女子--向日葵3指，戴安娜粉玫瑰3枝</p>
+										<div class="sprice">
+											<span>￥<strong>188</strong></span>
+											<span class="iconfont icon-icon--" style="color: #9A9999;"></span>
+										</div>
+										<div class="controllercount">
+											<span id="reduce">-</span>
+											<span id="countValue">1</span>
+											<span id="add">+</span>
+										</div>
+									</figcaption>
+								</figure>
+							</div>
+						</div>
+						<div class="main-bottom">
+							<div class="main-bottom-left">
+								<figure>
+									<i class="iconfont icon-weixuanzhong-01" id="selectall" checked="false"></i>
+									<figcaption>全选</figcaption>
+								</figure>
+								<figure>
+									<figcaption>合计：</figcaption>
+									<span>￥<i id="countMoney"></i>元</span>
+								</figure>
+								<div class="iconfont icon-icon--" id="Trash">
+									
+								</div>
+							</div>
+							<div class="immediatelybuy">
+								<a href="">立即购买</a>
+							</div>
+						</div>
+				</div>
+				<footer id="footer">
+					<a href="index.html">
+						<figure>
+							<img src="img/index.png" class="icon-shouye" />
+							<figcaption>首页</figcaption>
+						</figure>
+					</a>
+				
+					<a href="classifity.html">
+						<figure>
+							<img src="img/classification.png" class="icon-fenlei" />
+							<figcaption>分类</figcaption>
+						</figure>
+					</a>
+					<a href="flowerclub.html">
+						<figure>
+							<img src="img/news.png" class="icon-xiaoxi" />
+							<figcaption>花社</figcaption>
+						</figure>
+					</a>
+					<a>
+						<figure>
+							<img src="img/buycar.png" class="icon-gouwuche" />
+							<figcaption>购物车</figcaption>
+						</figure>
+					</a>
+					<a href="my.html">
+						<figure>
+							<img src="img/personal.png" class="icon-weibiaoti2fuzhi12" />
+							<figcaption>我的</figcaption>
+						</figure>
+					</a>
+				</footer>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	window.onload = function(){
+		var back = document.getElementById("back");
+		back.onclick = function(){
+			window.location.href="javascript:history.go(-1)";
+		}
+	}
+</script>

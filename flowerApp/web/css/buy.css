@@ -1,0 +1,96 @@
+.center{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: .2rem 0.2rem ;
+	align-items: center;
+	height: calc(100vh - .88rem);
+}
+b{
+	font-weight: 400;
+}
+.arrdess{
+	width: 100%;
+	height: 3rem;
+	background: white;
+	border-radius: 8px;
+	display: flex;
+	
+}
+.arrdess figure{
+	display: flex;
+	align-items: center;
+	padding: 0 .3rem;
+}
+.qy h3{
+	font-size: .38rem;
+	
+}
+.arrdess figcaption {
+	margin-left: .3rem;
+	
+}
+.qy{
+	display: flex;
+	align-items: center;
+	/* justify-content: flex-start; */
+}
+.qy p{
+	font-size: .28rem;
+	color: #9E9E9E;
+}
+.bh{
+	font-size: .28rem;
+	color: #333333;
+	margin-top: .3rem;
+}
+.list{
+	margin-top: .3rem;
+	width: 100%;
+	height: 5rem;
+	background: white;
+	border-radius: 8px;
+	font-size: .28rem;
+	/* padding: .2rem .3rem; */
+}
+.list_main img{
+	width: 2rem;
+	height: 2rem;
+}
+.list_main{
+	color: #808080;
+	margin-top: .2rem;
+	margin-left: .2rem;
+}
+.list_main figure{
+	display: flex;
+}
+.list_main figure b{
+	color: #fe0000;
+	margin-left: .3rem;
+}
+.list_main figcaption{
+	display: flex;
+	padding:0 .2rem;
+}
+.buy_list{
+	color: #808080;
+	margin-top: .3rem;
+	margin-left: .2rem;
+	border-bottom: 1px solid darkgray;
+}
+.sum{
+	color: #808080;
+	margin-left: 5rem;
+}
+.sum b{
+	color: #fe0000;
+}
+button{
+	border-radius: 22px;
+	background: #f97487;
+	width: 95%;
+	height: .85rem;
+	margin-top: 3rem;
+	color: white;
+}

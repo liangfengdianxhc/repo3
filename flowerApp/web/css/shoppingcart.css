@@ -1,0 +1,178 @@
+
+.main2{
+	width: 100%;
+	height: calc(100vh - .88rem - .98rem);
+	background-color: #f8f8f8;
+	display: flex;
+
+	flex-flow: column;
+}
+.noshop-top{
+	width: 100%;
+	flex: 1;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+.noshop-top img{
+	width: 3.15rem;
+	height: 3.15rem;
+	padding: 0.2rem;
+	box-sizing: border-box;
+}
+.noshop-top p{
+	font-size: 0.3rem;
+	color: #c9c9c9;
+}
+.noshop-top a{
+	border-radius: 0.1rem;
+	margin-top: 0.3rem;
+	width: 2.05rem;
+	height: 0.65rem;
+	background-color: #ff4444;
+	color: white;
+	font-size: 0.3rem;
+	display: inline-block;
+	text-align: center;
+	line-height: .65rem;
+}
+.main-bottom{
+	width: 100%;
+	height: 1rem;
+	background-color: white;
+}
+.main-bottom{
+	width: 100%;
+	display: flex;
+}
+.main-bottom-left{
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.25rem;
+	box-sizing: border-box;
+}
+.immediatelybuy{
+	width: 1.8rem;
+	height: 100%;
+	background-color: #f97487;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.immediatelybuy a{
+	font-size: 0.35rem;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 1rem;
+	color: white;
+}
+.main-bottom-left figure{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main-bottom-left figure figcaption{
+	font-size: 0.28rem;
+	color: #c2c2c2;
+}
+.main-bottom-left figure i{
+	color: #f97487;
+	margin-right: 0.1rem;
+}
+
+.main-bottom-left figure span{
+	color: #f97487;
+	font-size: 0.3rem;
+}
+
+#Trash{
+	width: 0.5rem;
+	height: 0.5rem;
+	font-size: 0.5rem;
+	color: #c2c2c2;
+}
+
+.haveshop{
+	width: 100%;
+	flex: 1;
+	height: 100%;
+	overflow-y: auto;
+	
+}
+.shopdiv{
+	width: 100%;
+	height: 2.25rem;
+	padding: 0.25rem;
+	border-bottom: #bfbfbf 0.01rem solid;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+}
+.shopdiv figure{
+	display: flex;
+	margin-left: 0.3rem;
+	align-items: flex-start;
+	align-items: center;
+	
+}
+#shopdiv-xuanzhong{
+	width: 0.4rem;
+	
+}
+.shopdiv figure img{
+	width: 1.8rem;
+	height: 1.8rem;
+}
+.shopdiv figure figcaption{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	margin-left: 0.15rem;
+}
+.shopdiv figure figcaption p{
+	font-size: 0.27rem;
+}
+.sprice{
+	width: 100%;
+	margin: 0.1rem 0;
+	display: flex;
+	justify-content: space-between;
+	
+}
+.sprice span{
+	font-size: 0.25rem;
+	color: #f97487;
+}
+.sprice span strong{
+	font-size: 0.25rem;
+}
+.controllercount{
+	width: 100%;
+	display: flex;
+	
+}
+.controllercount span{
+	font-size: 0.25rem;
+	display: inline-block;
+	width: 0.45rem;
+	height: 0.45rem;
+	text-align: center;
+	line-height: 0.45rem;
+	background-color: #e6e6e6;
+	margin-right: 0.1rem;
+}
+#shopdiv-xuanzhong{
+	font-size: .4rem;
+}
+
+.icon-xz{
+	color: #f97487;
+}

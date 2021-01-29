@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/my.css"/>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/my.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header id="header">拾间花坊</header>
+			
+			<div class="main">
+				<div class="login">
+					<div class="login-top">
+						<label class="iconfont icon-yonghu" style="color: white;font-size: 50px;"></label>
+						<button type="button" id="login" style="border-radius: 17px; background: #fdb4bf; font-size: .28rem;color: white;width: 1.5rem;height: .5rem;">点我登录</button>
+					</div>
+					<div class="success-login" style="height: 2.3rem;padding: 0 .2rem;box-sizing: border-box">
+						<div style="display: flex;justify-content: space-around" >
+
+								<img src="img/1_12.png" style="width: 1rem;height: 1rem;border-radius: 50% 50%;margin: .6rem .2rem">
+								<span id="username" style="line-height: 2.3rem;flex: 1"></span>
+								<span id="exit" style="line-height: 2.3rem;">退出登录</span>
+
+						</div>
+
+					</div>
+					<div class="login-bottom">
+						<figure>
+							<div class="box">
+								<label class="iconfont icon-huangguan" style="color: whitesmoke;"></label>
+								<figcaption>会员特权</figcaption>
+							</div>
+							<p>消费打折，各种特选响不停</p>
+						</figure>
+						<button type="button" id="examine">查看详情</button>
+					</div>
+				</div>
+				<div class="list">
+					<div class="list_main">
+						<figure>
+							<img src="img/flower6.png" >
+							<figcaption>
+								<p>抱抱我/自然风抱桶花--向日葵1枝，红玫瑰2枝，红色多头玫瑰2枝</p>
+								<b>￥158<br />×1</b>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="sum">
+						<p>2019年7月26日&nbsp;14:41</p>
+						<b>交易成功</b>
+					</div>
+				</div>
+				<div class="list">
+					<div class="list_main">
+						<figure>
+							<img src="img/flower6.png" >
+							<figcaption>
+								<p>抱抱我/自然风抱桶花--向日葵1枝，红玫瑰2枝，红色多头玫瑰2枝</p>
+								<b>￥158<br />×1</b>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="sum">
+						<p>2019年7月26日&nbsp;14:41</p>
+						<b>交易成功</b>
+					</div>
+				</div>
+			</div>
+			<footer id="footer">
+				<a href="index.html">
+					<figure>
+						<img src="img/index.png" class="icon-shouye" />
+						<figcaption>首页</figcaption>
+					</figure>
+				</a>
+			
+				<a href="classifity.html">
+					<figure>
+						<img src="img/classification.png" class="icon-fenlei" />
+						<figcaption>分类</figcaption>
+					</figure>
+				</a>
+				<a href="flowerclub.html">
+					<figure>
+						<img src="img/news.png" class="icon-xiaoxi" />
+						<figcaption>花社</figcaption>
+					</figure>
+				</a>
+				<a  href="shoppingcart.html">
+					<figure>
+						<img src="img/buycar.png" class="icon-gouwuche" />
+						<figcaption>购物车</figcaption>
+					</figure>
+				</a>
+				<a>
+					<figure>
+						<img src="img/personal.png" class="icon-weibiaoti2fuzhi12" />
+						<figcaption>我的</figcaption>
+					</figure>
+				</a>
+			</footer>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	$(function(){
+		$("#examine").click(function(){
+			location.href= "vip.html"
+		})
+	})
+</script>
